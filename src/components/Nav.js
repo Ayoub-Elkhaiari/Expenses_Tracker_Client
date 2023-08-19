@@ -1,0 +1,19 @@
+import { ExpenseContext } from "../context/ExpenseContext";
+import { useContext } from "react";
+
+const Nav = () => {
+
+    const [expenses, setExpenses] = useContext(ExpenseContext)
+
+
+    
+
+    return(
+        <header>
+            <h1>Expenses Management</h1>
+            <h5>Number of Expenses : {expenses.length} </h5>
+        </header>
+    )
+}
+
+export default Nav ;
