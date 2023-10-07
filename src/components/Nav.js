@@ -1,9 +1,12 @@
 import { ExpenseContext } from "../context/ExpenseContext";
 import { useContext } from "react";
+import { useExpenseContext } from "../hooks/useExpensesContext";
 
 const Nav = () => {
 
-    const [expenses, setExpenses] = useContext(ExpenseContext)
+    // const [expenses, setExpenses] = useContext(ExpenseContext)
+
+    const [expenses, setExpenses] = useExpenseContext() ;
 
 
     
